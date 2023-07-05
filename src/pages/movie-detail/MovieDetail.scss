@@ -1,0 +1,27 @@
+.MovieDetail {
+    .backdrop-container {
+        position: relative;
+        filter: blur(0px);
+        background: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        color: white;
+    }
+
+    .backdrop-background {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute !important;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        filter: blur(2px);
+        mix-blend-mode: multiply;
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    .poster-path {
+        border-radius: 10px;
+        box-shadow: rgba(255, 255, 255, 0.2) 0px 8px 24px;
+    }
+}
